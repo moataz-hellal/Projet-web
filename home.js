@@ -6,12 +6,12 @@ function playStop(){
     {
         isPlaying=true;
         myAudio.play();
-        audioBtn.innerHTML=("<img src='music-notes.png' alt='audio'>");
+        audioBtn.innerHTML=("<img src='media/music-notes.png' alt='audio'>");
     }
     else{
         isPlaying=false;
         myAudio.pause();
-        audioBtn.innerHTML=("<img src='music-notes-off.png' alt='audio'>");
+        audioBtn.innerHTML=("<img src='media/music-notes-off.png' alt='audio'>");
     }
 }
 

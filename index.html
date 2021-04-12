@@ -1,59 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>kattttouuuuusss</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="style.css" rel="stylesheet">
-</head>
-<body>
-<video class="myVid" src="video.mp4" autoplay muted loop></video>
-<div class="account-container">
-  <img id="logo" src="logo.PNG" alt="logo">
-<form class="box" id="login">
-  <input class="inputs" type="text" name="nom" id="nom" placeholder="Saisir votre username" >
-  <br>
-  <br>
-  <input class="inputs" type="password" name="nom" id="nom" placeholder="Saisir votre mot de passe" >
-  <button class="btn" id="go-register">S'inscrire</button>
-</form>
-<form class="box" id="register">
-  <input class="inputs" type="email" name="nom" id="nom" placeholder="Saisir votre email" >
-  <br>
-  <br>
-  <input class="inputs" type="text" name="nom" id="nom" placeholder="Saisir votre username" >
-  <br>
-  <br>
-  <input class="inputs" type="password" name="nom" id="nom" placeholder="Saisir votre mot de passe" >
-  <br>
-  <br>
-  <input class="inputs" type="password" name="nom" id="nom" placeholder="confirmer le mot de passe" >
-  <br>
-  <br>
-  <input type="checkbox" id="termes" name="terms" value="terms">
-  <label for="terms">j'ai lu est j'accepte les termes de service</label>
- 
-  <button class="btn" id="go-login">Se Connecter</button>
-  </form></div>
-<div class="footer">
- <img src="" alt="">
-</div>
-<ul class="social">
-  <li><a href="#"><img src="fb.png" alt="fb"></a></li>
-  <li><a href="#"><img src="insta.png" alt="fb"></a></li>
-  <li><a href="#"><img src="twitter.png" alt="fb"></a></li>
-</ul>
-<script src="scripts.js"></script>
-</body>
+<html>
+    <head>
+        <title>home</title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <audio id="myAudio" src="media/Birds-chirping-sound-effect.mp3" preload="auto"></audio>
+        <div class="header">
+            <div class="header-navbar">
+                <div class="navbar-element"><a onclick="playStop()"><img src="media/music-notes-off.png" alt="audio"></a></div>
+                <div class="navbar-element"><img src="media/logo.PNG" alt="logo"></div>
+                <div class="navbar-element" ><a href="#"><img src="media/shopping-cart.png" alt="Shop icon">Shop</a></div>
+                <div class="navbar-element"><a href="#"><img src="media/paw.png" alt="health icon">Health</a></div>
+                <div  class="navbar-element"><a href="#"><img src="media/dog.png" alt="Pets icon">Pets</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+        <div class="PageFront">
+        <div class="front" ><h1>Welcome To <strong>PogPaw</strong> ! </h1></div>
+        <div class="front"><h2>Have a Look Around! </h2></div>
+        <div class="front"><h3>And you'll find anything you need for your pets</h3></div></div>
+        <div class="icon-stack">
+            <div class="bigger-icon">
+                <div id="icon1"><img src="media/cat-stack.png" alt=""></div>
+                <div id="icon2"><img src="media/rabbit-stack.png" alt=""></div>
+            </div>
+            <div class="smaller-icon">
+                <div id="icon3"><img src="media/dog-stack.png" alt=""></div>
+                <div id="icon4"><img src="media/parrot-stack.png" alt=""></div>
+                <div id="icon5"><img src="media/fish-stack.png" alt=""></div>
+                <div id="icon6"><img src="media/hamster-stack.png" alt=""></div></div>
+        </div>
+        </div>
+        <span class="discover">
+        <span id="span1"><h1>+50</h1> <p>pets available</p></span>
+        <span><h1>+100</h1><p>items on sale</p></span>
+        <span><h1>+30</h1><p>associated veterinarians</p></span></span>
+        <div><h2> Planning to Adopt a Pet ? Look at our Recent Additions :</h2></div>
+        <div class="cards">
+        <div class="maincontainer">
+            <div class="thecard">
+                <div class="thefront"><strong>Marco</strong>
+                    <img src="media/pexels-anna-shvets-4587959.jpg" alt="">
+                </div>
+                <div class="theback">
+                    <br>
+                    <br>
+                    <img src="media/cat.png" alt="cat">
+                    <br>
+                    <br>
+                    Loves to : Sleep and Shower
+                    <br>
+                    <br>
+                    Favourite food: Jambon
+                </div>
+            </div>
+        </div>
+        <div class="maincontainer">
+            <div class="thecard">
+                <div class="thefront"><strong>Salma</strong>
+                    <img src="media/pexels-pixabay-326012.jpg" alt="">
+                </div>
+                <div class="theback">
+                    <br>
+                    <br>
+                    <img src="media/easter-bunny.png" alt="rabbit">
+                    <br>
+                    <br>
+                    Only Sleeps
+                    <br>
+                    <br>
+                    Favourite food: cucumber
+                </div>
+            </div>
+        </div>
+        <div class="maincontainer">
+            <div class="thecard">
+                <div class="thefront"><strong>Zouba</strong>
+                    <img src="media/pexels-valeria-boltneva-1805164.jpg" alt="">
+                </div>
+                <div class="theback">
+                    <br>
+                    <br>
+                    <img src="media/pet.png" alt="rabbit">
+                    <br>
+                    <br>
+                    Trained and very Loyal
+                    <br>
+                    <br>
+                    Favourite food: tuna
+                </div>
+            </div>
+        </div>
+        <div class="maincontainer">
+            <div class="thecard">
+                <div class="thefront"><strong>Falfoul</strong>
+                    <img src="media/pexels-tetyana-kovyrina-3586056.jpg" alt="">
+                </div>
+                <div class="theback">
+                    <br>
+                    <br>
+                    <img src="media/hamster.png" alt="rabbit">
+                    <br>
+                    <br>
+                    Adorable
+                    <br>
+                    <br>
+                    Favourite food: Eats Everything
+                </div>
+            </div>
+        </div>
+        <div class="maincontainer">
+            <div class="thecard">
+                <div class="thefront"><strong>Hayfem</strong>
+                    <img src="media/pexels-david-dibert-2613148.jpg" alt="">
+                </div>
+                <div class="theback">
+                    <br>
+                    <br>
+                    <img src="media/turtle.png" alt="rabbit">
+                    <br>
+                    <br>
+                    Fast for a Turtle
+                    <br>
+                    <br>
+                    Favourite food: Tomato,Lettuce
+                </div>
+            </div>
+        </div></div>
+        <footer>
+        <div class="footer-container">
+            <div class="socials">
+                <div class="footer-element"><a href="#" ><img src="media/facebook.png" alt=""></a></div>
+                <div class="footer-element"><a href="#"><img src="media/instagram.png" alt=""></a></div>
+                <div class="footer-element"><a href="#"><img src="media/twitter.png" alt=""></a></div>
+                <div class="footer-element"><a href="#"><img src="media/pinterest.png" alt=""></a></div>
+                <div class="footer-element"><a href="#"><img src="media/youtube.png" alt=""></a></div>
+                <a href="#top"><img src="media/arrow-up.png" alt="Top"></a>
+            </div>
+            <div class="footer-contents">
+                <div class="footer-element-logo"><img src="media/logo-full.png" alt="logo"></div>
+                <div class="footer-element-text">
+                    <div>Copyright © 2020 PogPaw All Rights Reserved</div>
+                    <div>All resources are used with "permission" ;D</div>
+                    <div>Participants :</div>
+                    <div class="name">(っ◔◡◔)っ 🐹 👑Moataz Hellal👑 🐹</div>
+                    <div class="name">✶ 🐬 𝒮𝒶𝓁𝓂𝒶 𝒴𝒶𝒽𝓎𝒶♡𝓊𝒾 🐬  ✶</div>
+                    <div class="name">🍁  🐦  𝐼𝓁𝑒𝒻 𝑀𝒶𝓁🍪𝓊𝒸𝒽  🐦  🍁</div>
+                    <div class="name"> 🍄 ⋆ 🦋𝙕𝙖𝙞𝙣𝙚𝙗 𝙆𝙚𝙛𝙞🦋 ⋆ 🍄</div>
+                </div>
+            </div>
+        </div>
+        </footer>
+    <script src="home.js"></script>
+    </body>
 </html>
-
-
-
-
-
-
